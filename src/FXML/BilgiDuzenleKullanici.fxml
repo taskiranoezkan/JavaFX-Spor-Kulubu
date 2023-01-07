@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="558.0" prefWidth="575.0" style="-fx-background-color: #ECEC35;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.BilgiDuzenleKullaniciController">
+   <children>
+      <Label layoutX="188.0" layoutY="96.0" text="İsim :" textFill="#120a8f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="129.0" text="Soyisim :" textFill="#120a8f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="162.0" text="Kullanıcı Adı :" textFill="#120a8f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="187.0" layoutY="199.0" text="Şifre :" textFill="#120a8f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtisim" layoutX="231.0" layoutY="93.0" promptText="İsim Giriniz" style="-fx-background-radius: 10;" />
+      <TextField fx:id="txtsoyisim" layoutX="231.0" layoutY="126.0" promptText="Soyisim Giriniz" style="-fx-background-radius: 10;" />
+      <TextField fx:id="txtkuladi" layoutX="229.0" layoutY="159.0" prefHeight="26.0" prefWidth="150.0" promptText="Kullanıcı Adı Giriniz" style="-fx-background-radius: 10;" />
+      <TextField fx:id="txtsifre" layoutX="231.0" layoutY="196.0" promptText="Şifre Giriniz" style="-fx-background-radius: 10;" />
+      <Button fx:id="btnguncelle" layoutX="269.0" layoutY="253.0" mnemonicParsing="false" onAction="#btnguncelle_c" style="-fx-background-radius: 10; -fx-background-color: #120a8f;" text="Güncelle" textFill="#fffdfd" />
+   </children>
+</AnchorPane>
