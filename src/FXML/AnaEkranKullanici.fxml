@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="560.0" prefWidth="578.0" style="-fx-background-color: #ECEC35;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AnaEkranKullaniciController">
+   <children>
+      <ImageView fitHeight="106.0" fitWidth="106.0" layoutX="238.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/eagles2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="119.0" layoutY="126.0" prefHeight="35.0" prefWidth="363.0" text="Kulüp Bilgileri Ve İstatistikleri" textAlignment="JUSTIFY" textFill="#120a8f">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="171.0" layoutY="173.0" text="Adres:" textFill="#120a8f">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbladres" layoutX="225.0" layoutY="177.0" prefHeight="19.0" prefWidth="321.0" text="Eagles Sports Club Stadium Golden" textFill="#120a8f">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="200.0" prefHeight="27.0" prefWidth="54.0" text="Şehir:" textFill="#120a8f">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblsehir" layoutX="223.0" layoutY="204.0" prefHeight="19.0" prefWidth="321.0" text="Kolorado" textFill="#120a8f">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="171.0" layoutY="227.0" prefHeight="27.0" prefWidth="54.0" text="Bölge:" textFill="#120a8f">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblbolge" layoutX="226.0" layoutY="231.0" prefHeight="19.0" prefWidth="321.0" text="Denver/Kolorado" textFill="#120a8f">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="254.0" prefHeight="27.0" prefWidth="65.0" text="Başkan:" textFill="#120a8f">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblbaskan" layoutX="228.0" layoutY="258.0" prefHeight="19.0" prefWidth="321.0" text="Özkan Taşkıran" textFill="#120a8f">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblsite" alignment="CENTER" layoutX="130.0" layoutY="308.0" prefHeight="19.0" prefWidth="321.0" text="www.eaglessports.com" textAlignment="RIGHT" textFill="#120a8f">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="281.0" prefHeight="27.0" prefWidth="82.0" text="Telefon:" textFill="#120a8f">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbltelefon" layoutX="236.0" layoutY="285.0" prefHeight="19.0" prefWidth="321.0" text="05316000212" textFill="#120a8f">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableistatistik" layoutY="361.0" onMouseClicked="#tableistatistik_c" prefHeight="198.0" prefWidth="578.0">
+         <columns>
+            <TableColumn fx:id="kol_id" prefWidth="48.800047278404236" text="id" />
+            <TableColumn fx:id="kol_brans" prefWidth="84.80005645751953" text="brans" />
+            <TableColumn fx:id="kol_sezon" prefWidth="108.79998779296875" text="sezon" />
+            <TableColumn fx:id="kol_basari" prefWidth="81.5999755859375" text="basarı" />
+            <TableColumn fx:id="kol_oyuncu" minWidth="0.0" prefWidth="181.60003662109375" text="parlayanoyuncu" />
+            <TableColumn fx:id="kol_puan" prefWidth="78.39999389648438" text="puan" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
